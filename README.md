@@ -10,3 +10,22 @@
 От вас жду архив с доработанным проектом, в котором будет активная страница с работающим отчётом по этому шаблону.
 
 ![alt Пример оформления отчёта](https://github.com/FathomCode/Yii2-Test-Task/blob/main/Пример%20оформления%20отчёта.jpg?raw=true)
+
+####Installation process
+
+# Install composer
+```
+cd /tmp
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+```
+
+# Install p-seed
+```
+cd /home/seed/
+mkdir p-seed
+chown seed:seed ./p-seed
+sudo -u seed git clone git@bitbucket.org:sitd777/p-seed.git ./p-seed
+cd ./p-seed
+sudo -u seed composer update
+```
